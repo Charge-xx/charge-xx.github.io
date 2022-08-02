@@ -7103,19 +7103,6 @@ function IsStimulated(C) {
 }
 
 //MoanerProfiles
-
-
-// 青衣 
-qyMoans = {
-    "hot": ["1"],
-    "medium": ["2"],
-    "light": ["3"],
-    "low": ["4"],
-    "orgasm": ["变…变态~❤~别欺负我了唔❤❤~", "我-我才不会屈服的！", "坏人❤~","阿巴阿巴❤"],
-    "pain": ["唔？", "住手！", "变态!", "小心我咬你哦", "小心我打你！", "得找个机会把你套麻袋"]
-}
-M_MOANER_addMoansProfile("qy", M_MOANER_qyMoans);
-
 //dog
 M_MOANER_dogMoans = {
     "hot": ["w... Wouuuf\u2665", "aouuh\u2665"],
@@ -7130,7 +7117,72 @@ M_MOANER_addMoansProfile("dog", M_MOANER_dogMoans);
 //fox
 //base: wif, yif, aouh
 //thanks to Noriko
-M_MOANER_foxMoans = {
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  MoanerProfiles
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// 仅在被主人玩弄时启用
+ownerOnly = {
+    "hot": [],
+    "medium": [],
+    "light": [],
+    "low": [],
+    "orgasm": [],
+    "pain": []
+}
+
+// 仅在被恋人玩弄时启用
+loverOnly = {
+    "hot": [],
+    "medium": [],
+    "light": [],
+    "low": [],
+    "orgasm": [],
+    "pain": []
+}
+
+// 支配者方案（可手动切换）
+domMoans = {
+}
+
+// 顺从着方案（可手动切换）
+subMoans = {
+
+}
+
+// RBQ 方案 ~  
+RBQ_Moans = {
+
+}
+
+// 青衣
+chargeMoans = {
+    "hot": [],
+    "medium": [],
+    "light": [],
+    "low": [],
+    "orgasm": [],
+    "pain": ["坏果子...", "笨蛋...!", "果子是绒布球...", "哼...绒布球也来欺负猫了...", "给你一猫爪...", "果子狗...猫不会屈服的！"]
+}
+M_MOANER_addMoansProfile("honoka", honokaMoans);
+
+//dog
+EN_M_MOANER_dogMoans = {
+    "hot": ["w... Wouuuf\u2665", "aouuh\u2665"],
+    "medium": ["waaaf\u2665", "ky\u016b\u016b\n", "..wouf"],
+    "light": ["Ouaff\u2665", "Aouh!", "Oua\u2665af", "Ky\u016bn\u2665"],
+    "low": ["wou..", "ouah\u2665", "Wouf\u2665", "\u2665ky\u016bn\u2665", "ky\u016b\u2665"],
+    "orgasm": ["ouaf\u2665 O... Ouuw... Ouaaaa!!", "Mmmhnn... aaaa... Ouuuaaaaaf!!", "mmmh... Aouuuh.... Aouhhhh!"],
+    "pain": ["Ka\u00ef!", "Aoouch!", "Kaaa\u00ef!", "Ouch", "Aow"]
+}
+M_MOANER_addMoansProfile("ENDog", EN_M_MOANER_dogMoans);
+
+//fox
+//base: wif, yif, aouh
+//thanks to Noriko
+EN_M_MOANER_foxMoans = {
     "hot": ["w... Wiiif\u2665", "Yiiif\u2665"],
     "medium": ["wiiif\u2665", "Yiii", "..yif"],
     "light": ["Wiff\u2665", "Yif!", "yi\u2665iif", "Wiif"],
@@ -7138,11 +7190,11 @@ M_MOANER_foxMoans = {
     "orgasm": ["Wiff\u2665 W... Wiii... WIIF!!", "Mmmhnn... Wiiif... Yiiiif!!", "mmmh... Aouuuh.... Aouhhhh!"],
     "pain": []
 }
-M_MOANER_addMoansProfile("fox", M_MOANER_foxMoans);
+M_MOANER_addMoansProfile("ENFox", EN_M_MOANER_foxMoans);
 
 //mouse
 //base coui
-M_MOANER_mouseMoans = {
+EN_M_MOANER_mouseMoans = {
     "hot": ["Scouiiic\u2665", "couiiic\u2665"],
     "medium": ["scouiii\u2665", "Couyk", "..scoui"],
     "light": ["Scouii\u2665", "Coui!", "kouu\u2665ic", "Couic \u2665"],
@@ -7150,10 +7202,10 @@ M_MOANER_mouseMoans = {
     "orgasm": ["Couic\u2665 sc.. couIIIiic!!", "Mmmhnn... ooo... ouiiiic!!", "mmmh... Scouuu.... Scouiiic!"],
     "pain": []
 }
-M_MOANER_addMoansProfile("mouse", M_MOANER_mouseMoans);
+M_MOANER_addMoansProfile("ENMouse", EN_M_MOANER_mouseMoans);
 
 //neko
-M_MOANER_nekoMoans = {
+EN_M_MOANER_nekoMoans = {
     "hot": ["n... Nyah\u2665", "NYyaaA\u2665"],
     "medium": ["nyAh\u2665", "nyyy", "..yah"],
     "light": ["nyah\u2665", "Yah!", "myuh", "mh\u2665"],
@@ -7161,10 +7213,10 @@ M_MOANER_nekoMoans = {
     "orgasm": ["Nya...Ny...NyaaAAaah!", "Mmmhnn... Nyhmm... Nyah!", "mmmh... mmmeeeee.... meeeoooow!"],
     "pain": []
 }
-M_MOANER_addMoansProfile("neko", M_MOANER_nekoMoans);
+M_MOANER_addMoansProfile("ENNeko", EN_M_MOANER_nekoMoans);
 
 //pig
-M_MOANER_pigMoans = {
+EN_M_MOANER_pigMoans = {
     "hot": ["Gruiik\u2665", "gruik\u2665"],
     "medium": ["gruiii\u2665", "Gruik", "..Grui.."],
     "light": ["Grui\u2665", "Gruik!", "gruuiii\u2665ic", "gruik \u2665"],
@@ -7172,10 +7224,10 @@ M_MOANER_pigMoans = {
     "orgasm": ["Gru\u2665 gr.. gruiIIIiick!!", "Mmmhnn... uii... gruiiik!!", "mmmh... Gruiik.... Gruiiiiik!"],
     "pain": ["Gruuik!!", "Aoouch!", "Awo... gruik!", "Ouch", "Gruiiik"]
 }
-M_MOANER_addMoansProfile("pig", M_MOANER_pigMoans);
+M_MOANER_addMoansProfile("ENPig", EN_M_MOANER_pigMoans);
 
 //wildFox
-M_MOANER_wildFoxMoans = {
+EN_M_MOANER_wildFoxMoans = {
     "hot": ["w... Wiiif\u2665", "Yiiif\u2665", "Wa\u2665ouu"],
     "medium": ["wiiif\u2665", "Yiii", "..yif", "waouuu"],
     "light": ["Wiff\u2665", "Yif!", "yi\u2665iif", "Wiif", "waou"],
@@ -7183,7 +7235,7 @@ M_MOANER_wildFoxMoans = {
     "orgasm": ["WAAAAOUUUUUUUHHHHH!", "Mmmhnn... Wiiif... Yiiiif!!", "AOUUUUUH!", "WAHOOOOOOOUUUUH!", "WAAAAAAAAHH!", "WAAAAOUUUUUUUHHHHH!", "AOUUUUUH!", "WAHOOOOOOOUUUUH!", "WAAAAAAAAHH!"],
     "pain": []
 }
-M_MOANER_addMoansProfile("wildFox", M_MOANER_wildFoxMoans);
+M_MOANER_addMoansProfile("ENWildFox", EN_M_MOANER_wildFoxMoans);
 
 
 //BC-Diaper-Wetter
