@@ -7163,10 +7163,10 @@ chargeMoans = {
     "medium": [],
     "light": [],
     "low": [],
-    "orgasm": [],
-    "pain": ["坏果子...", "笨蛋...!", "果子是绒布球...", "哼...绒布球也来欺负猫了...", "给你一猫爪...", "果子狗...猫不会屈服的！"]
+    "orgasm": ["变…变态~❤~别欺负我了唔❤❤~", "我-我才不会屈服的！", "坏人❤~","阿巴阿巴❤"],
+    "pain": ["唔？", "住手！", "变态!", "小心我咬你哦", "小心我打你！", "得找个机会把你套麻袋"]
 }
-M_MOANER_addMoansProfile("honoka", honokaMoans);
+M_MOANER_addMoansProfile("charge", chargeMoans);
 
 //dog
 EN_M_MOANER_dogMoans = {
