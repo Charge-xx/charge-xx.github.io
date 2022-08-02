@@ -7114,7 +7114,7 @@ qy = {
     "orgasm": ["喵...喵...喵啊❤", "嗯啊...嗯嗯❤...", "啊... 嗯... 嗯嗯❤ ... 呼~", "嗯喵... 嗯嗯... 喵❤", "阿巴阿巴❤"],
     "pain": ["啊哈？", "再打猫咬你哦", "变态!", "给你一猫爪...", "喵呜(炸毛)！", "呜...喵...", "笨蛋...没吃小鱼干吗？", "这可是很疼的...", "喵！...不要拿猫发泄啊！"]
 }
-M_MOANER_addMoansProfile("vneko", vnekoMoans);
+M_MOANER_addMoansProfile("qy", qyMoans);
 
 //dog
 M_MOANER_dogMoans = {
