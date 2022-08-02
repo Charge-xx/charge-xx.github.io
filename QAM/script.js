@@ -7106,7 +7106,7 @@ function IsStimulated(C) {
 
 
 // 青衣 
-qy = {
+M_MOANER_qyMoans = {
     "hot": ["1"],
     "medium": ["2"],
     "light": ["3"],
@@ -7114,7 +7114,7 @@ qy = {
     "orgasm": ["变…变态~❤~别欺负我了唔❤❤~", "我-我才不会屈服的！", "坏人❤~","阿巴阿巴❤"],
     "pain": ["唔？", "住手！", "变态!", "小心我咬你哦", "小心我打你！", "得找个机会把你套麻袋"]
 }
-M_MOANER_addMoansProfile("qy", qyMoans);
+M_MOANER_addMoansProfile("qy", M_MOANER_qyMoans);
 
 //dog
 M_MOANER_dogMoans = {
