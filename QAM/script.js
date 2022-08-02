@@ -7158,15 +7158,15 @@ RBQ_Moans = {
 }
 
 // 青衣
-chargeMoans = {
-    "hot": [],
-    "medium": [],
-    "light": [],
-    "low": [],
+qyMoans = {
+    "hot": ["坏人❤！！"],
+    "medium": ["哼❤~"],
+    "light": ["我要咬你了！"],
+    "low": ["请停下~"],
     "orgasm": ["变…变态~❤~别欺负我了唔❤❤~", "我-我才不会屈服的！", "坏人❤~","阿巴阿巴❤"],
-    "pain": ["唔？", "住手！", "变态!", "小心我咬你哦", "小心我打你！", "得找个机会把你套麻袋"]
+    "pain": ["唔？", "住手！", "变态!", "小心我咬你哦", "小心我打你！", "得找个机会把你套麻袋(小声)"]
 }
-M_MOANER_addMoansProfile("charge", chargeMoans);
+M_MOANER_addMoansProfile("qy", qyMoans);
 
 //dog
 EN_M_MOANER_dogMoans = {
