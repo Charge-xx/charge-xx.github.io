@@ -7106,7 +7106,7 @@ function IsStimulated(C) {
 
 
 // 青衣 
-M_MOANER_qyMoans = {
+qyMoans = {
     "hot": ["1"],
     "medium": ["2"],
     "light": ["3"],
